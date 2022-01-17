@@ -5,7 +5,9 @@ app_name = 'parksite'
 
 urlpatterns = [
     path('', views.index),
-    path('charts.html/', views.charts),
-    path('index/', views.index),
+    path('charts', views.charts),
+    path('layout-static', views.ls),
+    # path('index/', views.index, name='index'),
+
 ]
 
