@@ -46,6 +46,6 @@ def register(request):
 
 
 def tables(request):
-    return render(request, "register.html")
+    return render(request, "tables.html")
 
 
