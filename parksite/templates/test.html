@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="access-chart__card">
+  <div class="card__title">
+    <h4>왜안돼</h4>
+  </div>
+  <div class="card__chartWrapper">
+    <canvas id="testPieChart"></canvas>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script>
+  var pie_chart_test = {{pie_chart_test}}
+</script>
+<script src="{%static 'assets/demo/test.js'%}"></script>
+
+</body>
+</html>

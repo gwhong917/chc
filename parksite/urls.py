@@ -24,5 +24,7 @@ urlpatterns = [
     path('tables_area2', views.tables_area2),
     path('tables_time1', views.tables_time1),
     path('tables_time2', views.tables_time2),
+    path('test', views.test),
+    path('test2', views.test2),
 ]
 
