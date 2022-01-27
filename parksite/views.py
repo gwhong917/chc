@@ -1,12 +1,27 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Test
-
 from django.db import connection
+import folium
 
 
-# def index(request):
-#     return render(request, "index.html")
+def map_1(request):
+    map1_1 = folium.Map(location=[36.142803, 128.18161], zoom_start=8, width='90%', height='90%', )
+    maps = map1_1._repr_html_()
+
+    return render(request, "map_1.html", {'map': maps})
+
+
+def map_2(request):
+    return render(request, "map_2.html")
+
+
+def test3(request):
+    test_map = folium.Map(location=[36.142803, 128.18161], zoom_start=8, width='100%', height='100%',)
+    maps = test_map._repr_html_()#iframe이 있는 문자열로 반환
+
+    return render(request, "test3.html", {'map': maps})
+
 
 def test2(request):
     return render(request, "test2.html")
@@ -124,10 +139,5 @@ def tables_area2(request):
 
 def tables_time1(request):
     return render(request, "tables_time1.html")
-
-
-
-
-
 
 

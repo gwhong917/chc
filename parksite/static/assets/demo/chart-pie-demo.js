@@ -3,7 +3,7 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
 // Pie Chart Example
-var test_pie = document.getElementById("testPieChart").getContext('2d');
+var test_pie = document.getElementById("myPieChart").getContext('2d');
 var testPieChart = new Chart(test_pie, {
   type: 'pie',
   data: {
